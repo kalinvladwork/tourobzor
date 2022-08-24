@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tourobzor</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/base.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="logo col-md-1">1
+                <a href="#"> <img src="img/logo.png"></a>
+            </div>
+            <nav class="nav col-md-7">
+                <a href="#">Морские</a>
+                <a href="#">Круизные</a>
+                <a href="#">Экскурсионные</a>
+                <a href="#">Автобусные</a>
+                <a href="#">Украинские</a>
+            </nav>
+            <div class="phone col-md-2 phoneIcon">044 235 90 90</div>
+            <div class="user col-md-1">Личный<br> кабинет<span class="pointerBlue"></span></div>
+            <div class="header_searchIcon col-md-1"><img src="img/iconSearch.png"></div>
+        </div>
+    </div>
+</header>
+<div class="headerBottomLine container"></div>
+<div class="contentWrapper container">
+<div class="row">
+    <div class="banner col-md-12 noMargin">
+        <h2>наши роботы работают 24/7 чтобы подобрать вам самый лучший тур</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="basicTour">
+        <img class="img-responsive" src="img/29.jpg">
+        <!--обычная панель-->
+        <div class="basicTour_itemInfo" >
+            <div class="basicTour_itemInfo_bg">
+                <div class="mainTitle">Турция, Алания</div>
+                <h4 class="tourName">Большое прекрасное название нового тура</h4>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>7 дней</td>
+                        <td class="align-right">с 7 по 14 декабря</td>
+                    </tr>
+                    <tr>
+                        <td>Питание</td>
+                        <td class="align-right">all-inclusive</td>
+                    </tr>
+                    <tr>
+                        <td>Количество отдыхающих</td>
+                        <td class="align-right">2</td>
+                    </tr>
+                    <tr>
+                        <td>Бюджет поездки</td>
+                        <td class="align-right"><div class="cost"> $1500</div></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="selectionOptions"><a href="#"> Изменить параметры подбора тура<span class="pointerWhite"></span></a></div>
+        </div>
+
+        <!--панель поиска-->
+
+        <div class="searchFormTour" style="display: none">
+            <div class="basicTour_itemInfo_bg bg_search_bus">
+                <div class="search_bus">
+                    <div class="search_bus_select">
+                        <span>Испания</span>
+                    </div>
+                    <div class="search_bus_select">
+                        <span>Милан</span>
+                    </div>
+                    <div class="search_bus_select">
+                        <span>ИСПАНИЯ</span>
+                    </div>
+                    <div class="search_bus_select_new">
+                        <select >
+                            <option value="" selected="true">Любая</option>
+                            <option value="2">Австралия</option>
+                            <option value="3">Австрия</option>
+                            <option value="13">Андорра</option>
+                            <option value="14">Антигуа и Барбуда</option>
+                            <option value="16">Аргентина</option>
+                            <option value="22">Барбадос</option>
+                            <option value="25">Беларусь</option>
+                            <option value="26">Бельгия</option>
+                            <option value="29">Болгария</option>
+                            <option value="30">Боливия</option>
+                            <option value="33">Бразилия</option>
+                            <option value="39">Бутан </option>
+                            <option value="42">Великобритания</option>
+                            <option value="43">Венгрия</option>
+                            <option value="46">Вьетнам</option>
+                            <option value="48">Гавайи </option>
+                            <option value="49">Гаити</option>
+                        </select>
+                    </div>
+                </div>
+                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. <p>
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <input type="number" name="quantity" min="1" max="50">
+
+                        <td class="align-right"><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Количество отдыхающих</td>
+                        <td class="align-right">
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8+</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Бюджет поездки</td>
+                        <td class="align-right"><input type="text"></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div id="search_bus_pickUp"><span class="icon_bagDblue"></span>Подобрать тур</div>
+                <a id="search_expand" href="#">Расширенный поиск</a>
+            </div>
+        </div>
+
+        <!-- end панель поиска -->
+
+        <div class="basicTour_rating">
+            <div class="rating_point">Рейтинг тура 4,5</div>
+            <div>  по цене/качеству на основании  1000 отзывов туристов</div>
+        </div>
+        <div class="moreTour"><a href="#"> Подробнее о туре<span class="pointerOrange"></span></a></div>
+    </div>
+</div>
+<!-- Туры в Туурцию-->
+<div class="ruler row">
+    <div class="itemTour col-md-4">
+        <a href="#"><img src="img/30.jpg"></a>
+        <div class="itemTourInfo">
+            <a href="#"><h3>Большое красивое название тура</h3></a>
+            <div class="countryName">Кемер</div>
+            <div class="daysDate"><span>7 дней</span>,<span>7-14 января</span></div>
+            <div class="cost">$1300</div>
+        </div>
+        <div class="compare">Добавить к сравнению</div>
+        <div class="rating">
+            <div class="rating_point">4,5</div>
+            <div>рейтинг тура</div>
+        </div>
+    </div>
+    <div class="itemTour col-md-4">
+        <a href="#"><img src="img/31.jpg"></a>
+        <div class="itemTourInfo">
+            <a href="#"><h3>Большое красивое название тура</h3></a>
+            <div class="countryName">Кемер</div>
+            <div class="daysDate"><span>7 дней</span>,<span>7-14 января</span></div>
+            <div class="cost">$1300</div>
+        </div>
+        <div class="compare">Добавить к сравнению</div>
+        <div class="rating">
+            <div class="rating_point">4,5</div>
+            <div>рейтинг тура</div>
+        </div>
+    </div>
+    <div class="itemTour col-md-4">
+        <a href="#"><img src="img/32.jpg"></a>
+        <div class="itemTourInfo">
+            <a href="#"><h3>Большое красивое название тура</h3></a>
+            <div class="countryName">Кемер</div>
+            <div class="daysDate"><span>7 дней</span>,<span>7-14 января</span></div>
+            <div class="cost">$1300</div>
+        </div>
+        <div class="compare">Добавить к сравнению</div>
+        <div class="rating">
+            <div class="rating_point">4,5</div>
+            <div>рейтинг тура</div>
+        </div>
+    </div>
+</div>
+<div class="viewMore row">
+    <div class="col-md-12 noMargin"><a href="#"> <span class="icon-more1"></span> Посмотреть ещё 1000 туров в Турцию<span class="pointerWhite"></span></a></div>
+</div>
+<!-- конец Туры в Туурцию-->
+<!-- Туры в Тунис -->
+<div class="similarTour row">Похожие туры в тунис</div>
+<div class="ruler row">
+    <div class="itemTour col-md-4">
+        <a href="#"><img src="img/33.jpg"></a>
+        <div class="itemTourInfo">
+            <a href="#"><h3>Большое красивое название тура</h3></a>
+            <div class="countryName">Кемер</div>
+            <div class="daysDate"><span>7 дней</span>,<span>7-14 января</span></div>
+            <div class="cost">$1300</div>
+        </div>
+        <div class="compare">Добавить к сравнению</div>
+        <div class="rating">
+            <div class="rating_point">4,5</div>
+            <div>рейтинг тура</div>
+        </div>
+    </div>
+    <div class="itemTour col-md-4">
+        <a href="#"><img src="img/34.jpg"></a>
+        <div class="itemTourInfo">
+            <a href="#"><h3>Большое красивое название тура</h3></a>
+            <div class="countryName">Кемер</div>
+            <div class="daysDate"><span>7 дней</span>,<span>7-14 января</span></div>
+            <div class="cost">$1300</div>
+        </div>
+        <div class="compare">Добавить к сравнению</div>
+        <div class="rating">
+            <div class="rating_point">4,5</div>
+            <div>рейтинг тура</div>
+        </div>
+    </div>
+    <div class="itemTour col-md-4">
+        <a href="#"><img src="img/35.jpg"></a>
+        <div class="itemTourInfo">
+            <a href="#"><h3>Большое красивое название тура</h3></a>
+            <div class="countryName">Кемер</div>
+            <div class="daysDate"><span>7 дней</span>,<span>7-14 января</span></div>
+            <div class="cost">$1300</div>
+        </div>
+        <div class="compare">Добавить к сравнению</div>
+        <div class="rating">
+            <div class="rating_point">4,5</div>
+            <div>рейтинг тура</div>
+        </div>
+    </div>
+</div>
+<div class="viewMore row">
+    <div class="col-md-12 noMargin"><a href="#"><span class="icon-more2"></span> Посмотреть ещё туры в Тунис<span class="pointerWhite"></span></a></div>
+</div>
+<!-- конец Туры в Тунис -->
+<!-- Туры в Египет -->
+<div class="similarTour row">Похожие туры в тунис</div>
+<div class="ruler row">
+    <div class="itemTour col-md-4">
+        <a href="#"><img src="img/36.jpg"></a>
+        <div class="itemTourInfo">
+            <a href="#"><h3>Большое красивое название тура</h3></a>
+            <div class="countryName">Кемер</div>
+            <div class="daysDate"><span>7 дней</span>,<span>7-14 января</span></div>
+            <div class="cost">$1300</div>
+        </div>
+        <div class="compare">Добавить к сравнению</div>
+        <div class="rating">
+            <div class="rating_point">4,5</div>
+            <div>рейтинг тура</div>
+        </div>
+    </div>
+    <div class="itemTour col-md-4">
+        <a href="#"><img src="img/37.jpg"></a>
+        <div class="itemTourInfo">
+            <a href="#"><h3>Большое красивое название тура</h3></a>
+            <div class="countryName">Кемер</div>
+            <div class="daysDate"><span>7 дней</span>,<span>7-14 января</span></div>
+            <div class="cost">$1300</div>
+        </div>
+        <div class="compare">Добавить к сравнению</div>
+        <div class="rating">
+            <div class="rating_point">4,5</div>
+            <div>рейтинг тура</div>
+        </div>
+    </div>
+    <div class="itemTour col-md-4">
+        <a href="#"><img src="img/38.jpg"></a>
+        <div class="itemTourInfo">
+            <a href="#"><h3>Большое красивое название тура</h3></a>
+            <div class="countryName">Кемер</div>
+            <div class="daysDate"><span>7 дней</span>,<span>7-14 января</span></div>
+            <div class="cost">$1300</div>
+        </div>
+        <div class="compare">Добавить к сравнению</div>
+        <div class="rating">
+            <div class="rating_point">4,5</div>
+            <div>рейтинг тура</div>
+        </div>
+    </div>
+</div>
+<div class="viewMore row">
+    <div class="col-md-12 noMargin"><a href="#"><span class="icon-more3"></span> Посмотреть ещё туры в Египет<span class="pointerWhite"></span></a></div>
+</div>
+<!-- конец Туры в Египет -->
+</div>
+
+<footer class="footer">
+    <div class="ft_topLine"></div>
+    <div class="ft_bottomLine"></div>
+    <div class="container">
+        <div class="row">
+            <div class="ft_goodKnow col-md-6">
+                <div class="ft_title">Полезно знать </div>
+                <ul class="col-md-4">
+                    <li><a href="#">Новости туризма</a></li>
+                    <li><a href="#">Интересное о странах</a></li>
+                    <li><a href="#">Детали о странах</a></li>
+                </ul>
+                <ul class="col-md-4">
+                    <li><a href="#">Афиша стран</a></li>
+                    <li><a href="#">Развенчиваем мифы</a></li>
+                    <li><a href="#">Тур компании</a></li>
+                </ul>
+                <ul class="col-md-4">
+                    <li><a href="#">Советы бывалых</a></li>
+                    <li><a href="#">Туристу на заметку</a></li>
+                    <li><a href="#">Страны,  детали о пляжах, курорты</a></li>
+                </ul>
+            </div>
+            <div class="ft_contacts col-md-6">
+                <div class="ft_aboutProject">
+                    <div class="ft_title">О проекте </div>
+                    <ul>
+                        <li><a href="#">О редакции</a></li>
+                        <li><a href="#">Турфирмы</a></li>
+                        <li><a href="#">Благотворительность</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+                <div class="ft_sodialnetwork">
+                    <div class="ft_title">Мы в социальных сетях</div>
+                    <ul>
+                        <li><a href="#"><img src="img/icon_vk.png"></a> </li>
+                        <li><a href="#"><img src="img/icon_fb.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="_design_ row">
+            <div class="col-md-6">
+                <ul class="col-md-4">
+                    <li>© 2013 tourobzor.com</li>
+                </ul>
+                <ul class="col-md-4">
+                    <li><a href="#">Условия использования сайта</a></li>
+                </ul>
+            </div>
+            <div class="_design_by">Нарисовано в Escape</div>
+        </div>
+    </div>
+</footer>
+</div>
+
+</body>
+</html>
